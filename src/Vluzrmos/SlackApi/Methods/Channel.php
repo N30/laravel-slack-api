@@ -75,9 +75,9 @@ class Channel extends SlackMethod implements SlackChannel
      *
      * @return array
      */
-    public function invite($channel, $user)
+    public function invite($channel, $users)
     {
-        return $this->method('invite', compact('channel', 'user'));
+        return $this->method('invite', compact('channel', 'users'));
     }
 
     /**
